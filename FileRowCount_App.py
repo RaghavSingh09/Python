@@ -107,7 +107,7 @@ def clicked():
     if(xcelInfo==''):
         xcelInfo=1
     try:
-        if((ifile=='' or ofile=='') and (rdBtn ==1 or rdBtn==2)):
+        if((ifile=='' or ofile=='') and (rdBtn !='3')):
             messagebox.showinfo('Error', 'Please Provide Input / Output File Info.')
         elif(ifile!='' and ofile!='' and rdBtn=='1'):
             #Reading Folder Loactions From Excel File
